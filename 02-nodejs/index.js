@@ -32,10 +32,6 @@ function obterEnderenco(idUsuario, callback){
     },2000)
 }
 
-function resolverUsuario(error,usuario){
-    console.log('usuario',usuario)
-}
-
 obterUsuario(function resolverUsuario(error, usuario){
     if(error){
         console.error("DEU RUIN em USUARIOS",error)
@@ -63,8 +59,3 @@ obterUsuario(function resolverUsuario(error, usuario){
         `)
     })
 })
-
-//const telefone = obterTelefone(usuario.id)
-
-//console.log('usuario',usuario)
-//console.log('telefone',telefone)
