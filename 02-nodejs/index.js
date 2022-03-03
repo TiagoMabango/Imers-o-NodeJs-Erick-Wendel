@@ -3,7 +3,6 @@
 1-Obter o numero de telefone de um usuario a partir do id
 2-obter o enderoço de usuario pelo id
 */
-
 function obterUsuario(callback){
     setTimeout(function(){
         return callback(null,{
@@ -50,8 +49,6 @@ obterUsuario(function resolverUsuario(error, usuario){
             console.error("DEU RUIN em endereco",error)
             return;
         } 
-
-
         console.log(` 
             Nome: ${usuario.nome},
             Endereco: ${endereco.rua},${endereco.numero}
